@@ -90,11 +90,12 @@
 
           updateAmount("currentWithdraw",withdrawNumber);
           document.getElementById("withdrawAmount").value = "";
+          updateAmount("currentBalance", -1*withdrawNumber);
 
-          const currentBalance = document.getElementById("currentBalance").innerText;
-          const currentBalanceNumber = parseFloat(currentBalance);
-          const totalBalance = currentBalanceNumber - withdrawNumber;
-          document.getElementById("currentBalance").innerText = totalBalance;
+          // const currentBalance = document.getElementById("currentBalance").innerText;
+          // const currentBalanceNumber = parseFloat(currentBalance);
+          // const totalBalance = currentBalanceNumber - withdrawNumber;
+          // document.getElementById("currentBalance").innerText = totalBalance;
 
       })
     </script>
